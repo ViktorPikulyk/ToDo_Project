@@ -4,6 +4,7 @@ const http = require("http");
 const config = require("./utils/config");
 const path = require('path');
 
+let a = 1;
 
 const server = http.createServer(app);
 
