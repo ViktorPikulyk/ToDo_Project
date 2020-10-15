@@ -1,0 +1,297 @@
+#navnav{
+  background:rgba(255, 255, 255, 0.9);
+  border-bottom: 1px solid;
+  border-color:rgba(0, 0, 0, 0.1);
+}
+
+#brand{
+  background: -webkit-linear-gradient(-60deg, rgb(24,90,188), rgb(85,189,244), rgb(24,90,188));
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: flow 7s ease-in-out infinite;
+  background-size:300%;
+  font-size: 50px;
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+}
+
+@keyframes flow {
+  0%{
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+#login_container{
+  text-align: left;
+  border-radius: 3%;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  
+}
+
+#login_container h2{
+  text-align: center;
+}
+
+#all{
+  text-align: center;
+}
+
+.formErrors{
+  color:red;
+  font-size: 13px;
+}
+
+#namer{
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: bold;
+  font-size:16px;
+}
+
+#plusButton{
+  color:rgb(85,189,244);
+  font-size: 30px;
+  height: 30px;
+  width: 30px;
+  text-align: center;
+  border-radius: 90%;
+  line-height: 13px;
+  margin-top: 18px;
+  margin-left: 10px;
+  transition: 0.5s;
+}
+
+#plusButton:hover{
+  color:rgb(24,90,188, 0.7);
+  background-color: rgba(85,189,244,0.3);
+  transition: 0.5s;
+}
+
+#mainList{
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  user-select: none;
+  padding: 0;
+  margin: auto;
+}
+
+#editButton{
+  height: 30px;
+}
+
+#editButton:hover{
+  filter:contrast(0);
+}
+
+@media screen and (max-width: 540px) {
+  #mainList{
+    box-shadow: none;
+    border-radius: 0;
+  }
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-50%);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+
+
+#todoItem{
+  
+  height: 50px;
+  padding: auto;
+}
+
+#listUl{
+  padding: 0;
+  list-style-type: none;
+}
+
+
+#todoH{
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-weight: 600;
+  height: 60px;
+  padding: auto;
+  outline: 0;
+  border-radius: 0px;
+}
+
+#expM{
+  color: red;
+  height: 100%;
+  width: 15%;
+  float: left;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top:-5px;
+}
+
+#itemTitle{
+  height: 100%;
+  width: 76%;
+  float: left;
+  font-size: 20px;
+  padding-left: 10px;
+  text-align: left;
+  line-height: 20px;
+}
+
+#itemTitleE{
+  height: 100%;
+  width: 71%;
+  float: left;
+  font-size: 20px;
+  padding-left: 10px;
+  text-align: left;
+  line-height: 20px;
+}
+
+#xButton{
+  border:none;
+  outline: 0;
+  background: none;
+  height: 100%;
+  width: 7%;
+  font-size: 23px;
+  font-weight: bold;
+  float: left;
+  margin-top: -8px;
+  transition: 0.5s;
+}
+
+#xButtonI{
+  width: 20px;
+}
+
+#eButton{
+  border:none;
+  outline: 0;
+  background: none;
+  height: 100%;
+  width: 7%;
+  font-size: 23px;
+  font-weight: bold;
+  float: left;
+  margin-top: -7px;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+#eButtonI{
+  width: 22px;
+}
+
+#logButton{
+  background-color: rgba(0, 0, 0, 0.1);
+  border: none;
+}
+
+#logButtonI{
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+#logButton:hover{
+  color:white;
+  background-color: red;
+}
+
+#checkbox{
+  float: left;
+  width: 5%;
+  height: 100%;
+  margin-top: 1px;
+  font-weight: 700;
+}
+
+#checkbox2{
+  width: 100%;
+  height: 100%;
+}
+
+
+
+.custom-cir input[type=checkbox] {
+  display: none;
+}
+
+
+.custom-cir {
+  font-size: 16px;
+  line-height: 20px;
+}
+.custom-cir label {
+  cursor: pointer;
+}
+.custom-cir label:before {
+  display: inline-block;
+  width: 20px;
+  border-radius: 20px;
+  margin-right: 5px;
+  content: "\25CB";
+  color: #eee;
+  text-align: center;
+  background: #eee;
+}
+.custom-cir label:hover::before{
+  color: #aaa;
+  background: #aaa;
+}
+
+.custom-cir input:checked ~ label:before {
+  content: "\2713";
+  background: rgba(63, 131, 191, 0.55);
+  color: #fff;
+}
+
+.container, #mainList{
+  animation: transitionIn 1.5s;
+}
+
+@keyframes transitionIn {
+  from {
+    opacity: 0;
+  }
+
+  to{
+    opacity: 1;
+  }
+}
+
+#profile-container{
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  padding: 50px;
+  user-select: none;
+}
+
+#profile-container h2{
+  font-size: 20px;
+  opacity: 0.6;
+}
+
+#report{
+  font-weight: bold;
+}
+
+#report td{
+  padding: 7px;
+}
