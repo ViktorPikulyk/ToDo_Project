@@ -5,6 +5,7 @@ const config = require("./utils/config");
 const path = require('path');
 
 let a = 1;
+let b = 2;
 
 const server = http.createServer(app);
 
